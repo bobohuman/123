@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://v3.bootcss.com/examples/carousel/ -->
+<html lang="zh-TW">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no" />
+<title>臺中MaaS旅運系統</title>
+<link href="js/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="home">
+<div class="mapbox">
+  <div class="detail">
+  <!--左側選單-->
+  <div class="route_data">
+  <a class="btn btn_back" href="Step02.html"><img src="images/svg/ic_back.svg" alt="回上一頁">回上一頁</a>
+  <a class="btn btn-dark list" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><p>點選收合</p></a>
+  
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <div class="travel">
+	    <div class="path">
+          <p class="start"><img src="images/svg/ic_RouteStart.svg" alt="起點">臺中火車站</p>
+		  <div class="line"></div>
+          <p class="end"><img src="images/svg/ic_RouteEnd.svg" alt="終點">逢甲夜市</p>
+		</div>
+        <form class="form-inline">
+          <label class="my-1 mr-2" for="SelectPref">排序方式</label>
+          <select class="custom-select my-1 mr-sm-2" id="SelectPref">
+            <option selected>請選擇...</option>
+            <option value="1">最少轉乘次數</option>
+          </select>
+        </form>
+	  </div>
+	  <div class="listbox ch">
+		<div class="box">
+          <div class="d-flex align-items-center time_tt">
+            <input type="checkbox" id="check01" checked>
+            <label for="check01">下午 12:59<img src="images/svg/ic_arrow01.svg" alt="">下午 1:30</label>
+		  </div>
+		  <p class="time_total">1小時2分鐘  /  1.2公里  /  $300(預估票價)</p>
+		  <div class="plan">
+		    <a href="Step04.html">
+			<span><img src="images/svg/ic_walk.svg" alt="走路"><p>3</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_bus.svg" alt="公車(市區)"><p class="sort bus_01">360</p><p>30</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_mrt.svg" alt="捷運"><p class="sort mrt">綠線</p><p>5</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_car.svg" alt="車"><p>10</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_bike.svg" alt="腳踏車"><p>5</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_ibike.svg" alt="ibike"><p>5</p></span>
+			</a>
+		  </div>
+		</div>
+		
+		<div class="box">
+          <div class="d-flex align-items-center time_tt">
+            <input type="checkbox" id="check02">
+            <label for="check02">下午 12:59<img src="images/svg/ic_arrow01.svg" alt="">下午 1:30</label>
+		  </div>
+		  <p class="time_total">1小時2分鐘  /  1.2公里  /  $300(預估票價)</p>
+		  <div class="plan">
+			<a href="Step04.html">
+			<span><img src="images/svg/ic_bike.svg" alt="腳踏車"><p>5</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_ibike.svg" alt="ibike"><p>5</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_train.svg" alt="火車"><p class="sort train">自強號3529次</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_bus.svg" alt="公車(國道)"><p class="sort bus_02">大甲→臺中</p><p>30</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_walk.svg" alt="走路"><p class="sort walk">站間</p><p>3</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_airplane.svg" alt="飛機"><p class="sort airplane">立榮航空 B7-8955</p><p>30</p></span>
+			</a>
+		  </div>
+		</div>
+		
+		<div class="box">
+          <div class="d-flex align-items-center time_tt">
+            <input type="checkbox" id="check03">
+            <label for="check03">下午 12:59<img src="images/svg/ic_arrow01.svg" alt="">下午 1:30</label>
+		  </div>
+		  <p class="time_total">1小時2分鐘  /  1.2公里  /  $300(預估票價)</p>
+		  <div class="plan">
+			<a href="#">
+			<span><img src="images/svg/ic_bus.svg" alt="公車(國道)"><p class="sort bus_02">大甲→臺中</p><p>30</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_thsrc.svg" alt="高鐵"><p class="sort thsrc">5843次</p><p>45</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_boat.svg" alt="船"><p class="sort boat">海峽號</p><p>30</p></span>
+			</a>
+		  </div>
+		</div>
+		
+		<div class="box">
+          <div class="d-flex align-items-center time_tt">
+            <input type="checkbox" id="check04">
+            <label for="check04">下午 12:59<img src="images/svg/ic_arrow01.svg" alt="">下午 1:30</label>
+		  </div>
+		  <p class="time_total">1小時2分鐘  /  1.2公里  /  $300(預估票價)</p>
+		  <div class="plan">
+			<a href="#">
+			<span><img src="images/svg/ic_walk.svg" alt="走路"><p>3</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_bus.svg" alt="公車(市區)"><p class="sort bus_01">360</p><p>30</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_mrt.svg" alt="捷運"><p class="sort mrt">綠線</p><p>5</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_car.svg" alt="車"><p>10</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_bike.svg" alt="腳踏車"><p>5</p></span>
+			<img src="images/svg/ic_arrow02.svg" alt="">
+			<span><img src="images/svg/ic_ibike.svg" alt="ibike"><p>5</p></span>
+			</a>
+		  </div>
+		</div>
+	  </div>
+	  
+    </div>
+  </div>
+  </div>
+  
+  
+  <!--下方選單-->
+  <div class="container_b">
+  <a class="btn btn-dark" data-toggle="collapse" href="#viewpoint" role="button" aria-expanded="false" aria-controls="collapseExample"><p>點選收合</p></a>
+  
+  <div class="collapse" id="viewpoint">
+    <div class="card card-body">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="nav-all" aria-selected="true"><img src="images/svg/bt_all.svg" alt="全部">全部</a>
+        <a class="nav-item nav-link" id="nav-view-tab" data-toggle="tab" href="#view" role="tab" aria-controls="nav-view" aria-selected="false"><img src="images/svg/bt_view.svg" alt="景點">景點</a>
+        <a class="nav-item nav-link" id="nav-food-tab" data-toggle="tab" href="#food" role="tab" aria-controls="nav-food" aria-selected="false"><img src="images/svg/bt_food.svg" alt="餐廳">餐廳</a>
+		<a class="nav-item nav-link" id="nav-rest-tab" data-toggle="tab" href="#rest" role="tab" aria-controls="nav-rest" aria-selected="false"><img src="images/svg/bt_rest.svg" alt="住宿">住宿</a>
+		<a class="nav-item nav-link" id="nav-more-tab" data-toggle="tab" href="#more" role="tab" aria-controls="nav-more" aria-selected="false"><img src="images/svg/bt_more.svg" alt="看更多">看更多</a>
+      </div>
+    </nav>
+	
+	<div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="nav-all-tab">
+      <div class="variable-width">
+        <div class="box">
+          <a href="#">
+            <div class="pic"><img src="images/img/pic01.jpg" alt="圖說"></div>
+            <div class="info">
+              <ul>
+                <li class="tt">逢甲夜市_逢甲商圈</li>
+                <li class="w01">82 公尺</li>
+                <li class="w02">臺中市407西屯區文華路</li>
+                <li class="w03">12:00~凌晨2:00</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="#">
+            <div class="pic"><img src="images/img/pic02.jpg" alt="圖說"></div>
+            <div class="info">
+              <ul>
+                <li class="tt">Top City臺中大遠百</li>
+                <li class="w01">1.6 公里</li>
+                <li class="w02">臺中市407西屯區臺灣大道三段251號</li>
+                <li class="w03">週一至五 11:00~22:00 </li>
+              </ul>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="#">
+            <div class="pic"><img src="images/img/pic03.jpg" alt="圖說"></div>
+            <div class="info">
+              <ul>
+                <li class="tt">八二三紀念公園</li>
+                <li class="w01">4.4 公里</li>
+                <li class="w02">臺中市406北屯區昌平東五路</li>
+                <li class="w03">詳見官網或電話洽詢</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="#">
+            <div class="pic"><img src="images/img/pic04.jpg" alt="圖說"></div>
+            <div class="info">
+              <ul>
+                <li class="tt">精明一街</li>
+                <li class="w01">2.7 公里</li>
+                <li class="w02">臺中市403西區精明一街</li>
+                <li class="w03">10:00~1:00</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="#">
+            <div class="pic"><img src="images/img/pic05.jpg" alt="圖說"></div>
+            <div class="info">
+              <ul>
+                <li class="tt">中正公園</li>
+                <li class="w01">4.4 公里</li>
+                <li class="w02">臺中市404北區學士路100號</li>
+                <li class="w03">7:00~22:00</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+	  </div>
+      <div class="tab-pane fade" id="view" role="tabpanel" aria-labelledby="nav-view-tab">...</div>
+      <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="nav-food-tab">...</div>
+	  <div class="tab-pane fade" id="rest" role="tabpanel" aria-labelledby="nav-rest-tab">...</div>
+	  <div class="tab-pane fade" id="more" role="tabpanel" aria-labelledby="nav-more-tab">...</div>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+  </div><!--detail end-->
+  
+  <div class="location">
+    <div class="bt01"><a href="#" title="定位">定位</a></div>
+	<div class="bt02"><a href="#" title="放大">放大</a></div>
+	<div class="bt03"><a href="#" title="縮小">縮小</a></div>
+  </div>
+  
+  <div class="mapimg"></div>
+</div>
+    
+    
+<!--js-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/slider/r-slider.js"></script>
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+
+<script>
+$(document).ready(function () {
+$('.collapse').collapse()
+})
+</script>
+<script>
+    var a1 = new slider({
+        container: "#c1",
+        start: -100,
+        end: 100,
+        step: 1,
+        value: 0,
+    });
+	var a1 = new slider({
+        container: "#c2",
+        start: -100,
+        end: 100,
+        step: 1,
+        value: 0,
+    });
+	var a1 = new slider({
+        container: "#c3",
+        start: -100,
+        end: 100,
+        step: 1,
+        value: 0,
+    });
+	var a4 = new slider({
+       container:"#tool_a01",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_a02",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_a03",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_b01",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_b02",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_b03",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+
+    function change(obj) {
+        $(obj.container).next("td").html(obj.values.toString())
+    }
+    function Switch(obj) {
+        $(obj.container).parent().next("td").html(obj.values.toString())
+    }
+</script>
+<!--輪播-->
+<link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
+<script>
+$(".viewlist").slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    responsive: [   
+    {breakpoint: 1200,settings: {slidesToShow:3,}},
+	{breakpoint: 767,settings: {slidesToShow:2,}}
+  ]
+});
+</script>
+<script>
+$('.variable-width').slick({
+  dots: false,
+  infinite: true,
+  arrows: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: false,
+  variableWidth: true
+});
+</script>
+    
+</body>
+</html>

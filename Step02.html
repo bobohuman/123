@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://v3.bootcss.com/examples/carousel/ -->
+<html lang="zh-TW">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no" />
+<title>臺中MaaS旅運系統</title>
+<link href="js/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="mapbox">
+  <div class="detail">
+  <div class="route_box">
+    <div class="mapline">
+    <div class="route01">
+      <div class="icon"><img src="images/svg/ic_RouteStart.svg" alt="起點"></div>
+      <input type="text" placeholder="請輸入起點" class="w-100">
+    </div>
+    <div class="route02">
+      <div class="icon"><img src="images/svg/ic_RouteEnd.svg" alt="終點"></div>
+      <input type="text" placeholder="請輸入終點" class="w-100">
+    </div>
+    </div>
+    <div class="btn_turn"><a href="Step01.html"><img src="images/svg/ic_BtnTurn.svg" alt="翻轉"/></a></div>
+  </div>
+  
+  <div class="route_data">
+  <a class="btn btn-dark" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><p>點選收合</p></a>
+  
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <div class="listbox">
+	    <div class="box">
+		  <p class="tt">出發抵達</p>
+		  <div class="radiobox">
+		  <ul>
+		    <li><input type="radio" name="group1" id="radio01" checked><label for="radio01">立即出發</label></li>
+			<li><input type="radio" name="group1" id="radio02"><label for="radio02">出發時間</label></li>
+			<li><input type="radio" name="group1" id="radio03"><label for="radio03">抵達時間</label></li>
+		  </ul>
+		  </div>
+		  <div class="date"><input class="form-control" type="text" placeholder=""><a href="#"><img src="images/svg/ic_date.svg" alt="日期"></a></div>
+		</div>
+		
+		<div class="box">
+		  <p class="tt">偏好運具</p>
+		  <div class="checkbox">
+		  <ul>
+		    <li><input type="checkbox" id="checkbox01" checked><label for="checkbox01">公車</label></li>
+			<li><input type="checkbox" id="checkbox02"><label for="checkbox02">客運</label></li>
+			<li><input type="checkbox" id="checkbox03"><label for="checkbox03">捷運</label></li>
+			<li><input type="checkbox" id="checkbox04"><label for="checkbox04">台鐵</label></li>
+			<li><input type="checkbox" id="checkbox05"><label for="checkbox05">高鐵</label></li>
+			<li><input type="checkbox" id="checkbox06"><label for="checkbox06">渡輪</label></li>
+		  </ul>
+		  </div>
+		</div>
+		
+		<div class="box">
+		  <p class="tt">轉乘時間段</p>
+          <p>請設定您偏好的交通運具轉乘時段</p>
+          <div id="c1" class="linebar"></div>
+		  <div class="txt01"><p>0分鐘</p><p>30分鐘</p></div>
+		</div>
+		
+		<div class="box">
+		  <p class="tt">時間/價格偏好</p>
+          <p>旅運時間愈短，價格可能愈高</p>
+          <div id="c2" class="linebar"></div>
+		  <div class="txt01"><p>時間較短</p><p>價格較便宜</p></div>
+		</div>
+		
+		<div class="box">
+		  <p class="tt">第一哩路轉乘偏好</p>
+          <div class="d-flex align-items-center"><input type="checkbox" id="bus01" checked><label for="bus01">公車</label></div>
+		  <div id="tool_a01" class="linebar time"></div>
+		  <div class="d-flex align-items-center"><input type="checkbox" id="bike01" checked><label for="bike01">自行車</label></div>
+		  <div id="tool_a02" class="linebar time"></div>
+		  <div class="d-flex align-items-center"><input type="checkbox" id="car01" checked><label for="car01">搭車</label></div>
+		  <div id="tool_a03" class="linebar time"></div>
+		</div>
+		
+		<div class="box">
+		  <p class="tt">最後一哩路轉乘偏好</p>
+          <div class="d-flex align-items-center"><input type="checkbox" id="bus02" checked><label for="bus02">公車</label></div>
+		  <div id="tool_b01" class="linebar time"></div>
+		  <div class="d-flex align-items-center"><input type="checkbox" id="bike02" checked><label for="bike02">自行車</label></div>
+		  <div id="tool_b02" class="linebar time"></div>
+		  <div class="d-flex align-items-center"><input type="checkbox" id="car02" checked><label for="car02">搭車</label></div>
+		  <div id="tool_b03" class="linebar time"></div>
+		</div>
+		
+	  </div>
+	  
+	  <div class="btn01"><a href="Step03.html">開始搜尋</a></div>
+	  
+    </div>
+  </div>
+  </div>
+                              
+          
+  </div>
+  
+  <div class="mapimg bk">
+    <div class="warn"><img src="images/svg/ic_warn.svg" alt="提示"><p>找不到結果</p></div>
+  </div>
+</div>
+    
+    
+<!--js-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/slider/r-slider.js"></script>
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+
+<script>
+$(document).ready(function () {
+$('.collapse').collapse()
+})
+</script>
+<script>
+    var a1 = new slider({
+        container: "#c1",
+        start: -100,
+        end: 100,
+        step: 1,
+        value: 0,
+		changable: true,
+    });
+	var a1 = new slider({
+        container: "#c2",
+        start: -100,
+        end: 100,
+        step: 1,
+        value: 0,
+    });
+	var a1 = new slider({
+        container: "#c3",
+        start: -100,
+        end: 100,
+        step: 1,
+        value: 0,
+    });
+	var a4 = new slider({
+       container:"#tool_a01",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+	   changable: true,
+    });
+	var a4 = new slider({
+       container:"#tool_a02",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_a03",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_b01",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_b02",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+	var a4 = new slider({
+       container:"#tool_b03",
+       start : 1,
+       end:60,
+       step:1,
+       value:30,
+       showValue:true,
+       ondrag:change,
+       fixValue:true,
+    });
+
+    function change(obj) {
+        $(obj.container).next("td").html(obj.values.toString())
+    }
+    function Switch(obj) {
+        $(obj.container).parent().next("td").html(obj.values.toString())
+    }
+</script>
+    
+</body>
+</html>
